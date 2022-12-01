@@ -1,0 +1,300 @@
+body{
+    
+    background-color:#EAEFEF;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5em;
+
+}
+
+#site_wrap{
+    background-color:#EAEFEF;
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 
+    1fr 
+    664px
+    427px
+    1fr    
+    ;
+    grid-gap:16px;
+    grid-template-rows: 
+    86px /*header*/
+    142px /*title*/
+    509px /*featured_main featured_profile*/
+    276px /*images 1 and 2*/
+    1475px /*image3*/
+    119px
+    99px /*contact socialmedia*/
+    108px /*footer*/
+    ;
+    grid-template-areas: 
+        "header header header header"
+        ". title title ."
+        ". featured_main featured_profile ."
+        ". image1 image2 ."
+        ". image3 image3 ."
+        ". portfolio portfolio ."
+        ". socialmedia socialmedia ."
+        "footer footer footer footer"
+}
+
+.header{
+    background-color:#CCD9D9;
+    grid-area:header;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header .logo{
+    max-width:33px;
+    height: auto;
+    padding-left: 80px;
+    display: flexbox;
+}
+
+.header .nav{
+    /*outline:1px solid blue;*/
+    list-style: none;
+    padding: 0;
+    display: flex;
+}
+
+.header .nav a{
+    text-decoration:none;
+    border:2px solid #f0ffff;
+    border-radius:50em;
+    /*pill form*/
+    color:#f0ffff;
+    padding: 0px 20px;
+    margin:0 10px;
+    display: inline-block;
+    /*anchor tags*/
+}
+
+.header .nav .homebutton{
+    padding: 5px 25px 5px 25px;
+}
+
+.header .nav .aboutbutton{
+    padding: 5px 25px 5px 25px;
+}
+
+.header .nav .resumebutton{
+    padding: 5px 25px 5px 25px;
+}
+
+.header .nav .portfoliobutton{
+    padding: 5px 17px 5px 17px;
+}
+
+.header .nav .contactbutton{
+    padding: 5px 25px 5px 25px;
+}
+
+.header .nav a:hover, .header .nav .active{
+    background-color:#6C7373;
+}
+
+.title{
+    grid-area: title;
+    display: flexbox;
+    padding: 29px 50px 14px 50px;
+}
+
+.title img{
+    max-width: 100%;
+    height: auto;
+    padding-left: 50px;
+}
+
+.featured_main{
+    grid-area:featured_main;
+    display: flexbox;
+}
+
+.featured_main img{
+    max-height: 100%;
+    width: auto;
+}
+
+.featured_profile{
+    grid-area:featured_profile;
+    display: flexbox;
+}
+
+.featured_profile img{
+    max-height: 100%;
+    width: auto;
+    padding-left: 95px;
+}
+
+.image1{
+    grid-area:image1;
+    display: flexbox;
+}
+
+.image1 img{
+     max-width: 100%;
+    height: auto;
+}
+
+.image2{
+    grid-area: image2;
+    display: flexbox;
+}
+
+.image2 img{
+    max-width: 100%;
+    height: auto;
+}
+
+.image3{
+    grid-area: image3;
+    display: flexbox;
+}
+
+.image3 img{
+    max-width: 100%;
+    height: auto;
+
+}
+
+.portfolio{
+    grid-area: portfolio;
+    background-color:#CCD9D9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 100%;
+}
+
+.portfolio .nav{
+    /*outline:1px solid blue;*/
+    list-style: none;
+    padding: 0;
+    display: flex;
+}
+
+.portfolio img{
+    max-width: 100%;
+    height: auto;
+}
+
+.portfolio .nav a{
+    text-decoration:none;
+    border:2px solid #f0ffff;
+    border-radius:50em;
+    /*pill form*/
+    color:#f0ffff;
+    padding: 10px 20px 10px 20px;
+    margin:0 30px;
+    display: inline-block;
+    /*anchor tags*/
+}
+
+.portfolio .nav a:hover, .portfolio .nav .active{
+    background-color:#6C7373;
+}
+
+.socialmedia{
+    grid-area: socialmedia;
+    display: flex;
+    padding: 17px 360px 16px 360px;
+}
+
+.ello{
+    padding-right: 25px;
+}
+
+.email{
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.indeed{
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.instagram{
+    padding-left: 25px;
+}
+
+.footer{
+    background-color:#CCD9D9;
+    grid-area:footer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer .logo{
+    max-width:33px;
+    height: auto;
+    padding-left: 80px;
+    display: flexbox;
+}
+
+.footer .nav{
+    /*outline:1px solid blue;*/
+    list-style: none;
+    padding: 0;
+    display: flex;
+}
+
+.footer .nav a{
+    text-decoration:none;
+    border:2px solid #f0ffff;
+    border-radius:50em;
+    /*pill form*/
+    color:#f0ffff;
+    padding: 0px 20px;
+    margin:0 10px;
+    display: inline-block;
+    /*anchor tags*/
+
+}
+
+.footer .nav .homebutton{
+    padding: 5px 25px 5px 25px;
+}
+
+.footer .nav .aboutbutton{
+    padding: 5px 25px 5px 25px;
+}
+
+.footer .nav .resumebutton{
+    padding: 5px 25px 5px 25px;
+}
+
+.footer .nav .portfoliobutton{
+    padding: 5px 17px 5px 17px;
+}
+
+.footer .nav .contactbutton{
+    padding: 5px 25px 5px 25px;
+}
+
+.footer .nav a:hover, .footer .nav .active{
+    background-color:#6C7373;
+}
+
+@media screen and (max-width:480px){
+    #site_wrap{
+        grid-gap:8px;
+        grid-template-areas: 
+            "header header header header"
+            ". title title ."
+            ". featured_main featured_profile ."
+            ". image1 image2 ."
+            ". image3 image3 ."
+            ". portfolio portfolio ."
+            ". socialmedia socialmedia ."
+            "footer footer footer footer"
+    }
+}
+   
+
